@@ -1,13 +1,33 @@
 {
   "files": {
-    "main.css": "/goit-re-hw-08/static/css/main.a0521ea6.css",
-    "main.js": "/goit-re-hw-08/static/js/main.5be14f1d.js",
+    "main.css": "/goit-re-hw-08/static/css/main.b996680f.css",
+    "main.js": "/goit-re-hw-08/static/js/main.14fda537.js",
+    "static/css/572.ff5a22d9.chunk.css": "/goit-re-hw-08/static/css/572.ff5a22d9.chunk.css",
+    "static/js/572.a8b4586e.chunk.js": "/goit-re-hw-08/static/js/572.a8b4586e.chunk.js",
+    "static/css/77.f72c1673.chunk.css": "/goit-re-hw-08/static/css/77.f72c1673.chunk.css",
+    "static/js/77.3eba8c28.chunk.js": "/goit-re-hw-08/static/js/77.3eba8c28.chunk.js",
+    "static/css/556.9ad78a5c.chunk.css": "/goit-re-hw-08/static/css/556.9ad78a5c.chunk.css",
+    "static/js/556.63f551c6.chunk.js": "/goit-re-hw-08/static/js/556.63f551c6.chunk.js",
+    "static/css/583.1ccd37c2.chunk.css": "/goit-re-hw-08/static/css/583.1ccd37c2.chunk.css",
+    "static/js/583.f2c59011.chunk.js": "/goit-re-hw-08/static/js/583.f2c59011.chunk.js",
+    "static/css/617.4d918ca0.chunk.css": "/goit-re-hw-08/static/css/617.4d918ca0.chunk.css",
+    "static/js/617.59529c88.chunk.js": "/goit-re-hw-08/static/js/617.59529c88.chunk.js",
     "index.html": "/goit-re-hw-08/index.html",
-    "main.a0521ea6.css.map": "/goit-re-hw-08/static/css/main.a0521ea6.css.map",
-    "main.5be14f1d.js.map": "/goit-re-hw-08/static/js/main.5be14f1d.js.map"
+    "main.b996680f.css.map": "/goit-re-hw-08/static/css/main.b996680f.css.map",
+    "main.14fda537.js.map": "/goit-re-hw-08/static/js/main.14fda537.js.map",
+    "572.ff5a22d9.chunk.css.map": "/goit-re-hw-08/static/css/572.ff5a22d9.chunk.css.map",
+    "572.a8b4586e.chunk.js.map": "/goit-re-hw-08/static/js/572.a8b4586e.chunk.js.map",
+    "77.f72c1673.chunk.css.map": "/goit-re-hw-08/static/css/77.f72c1673.chunk.css.map",
+    "77.3eba8c28.chunk.js.map": "/goit-re-hw-08/static/js/77.3eba8c28.chunk.js.map",
+    "556.9ad78a5c.chunk.css.map": "/goit-re-hw-08/static/css/556.9ad78a5c.chunk.css.map",
+    "556.63f551c6.chunk.js.map": "/goit-re-hw-08/static/js/556.63f551c6.chunk.js.map",
+    "583.1ccd37c2.chunk.css.map": "/goit-re-hw-08/static/css/583.1ccd37c2.chunk.css.map",
+    "583.f2c59011.chunk.js.map": "/goit-re-hw-08/static/js/583.f2c59011.chunk.js.map",
+    "617.4d918ca0.chunk.css.map": "/goit-re-hw-08/static/css/617.4d918ca0.chunk.css.map",
+    "617.59529c88.chunk.js.map": "/goit-re-hw-08/static/js/617.59529c88.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0521ea6.css",
-    "static/js/main.5be14f1d.js"
+    "static/css/main.b996680f.css",
+    "static/js/main.14fda537.js"
   ]
 }
