@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/goit-re-hw-08/static/css/main.a0521ea6.css",
+    "main.js": "/goit-re-hw-08/static/js/main.5be14f1d.js",
+    "index.html": "/goit-re-hw-08/index.html",
+    "main.a0521ea6.css.map": "/goit-re-hw-08/static/css/main.a0521ea6.css.map",
+    "main.5be14f1d.js.map": "/goit-re-hw-08/static/js/main.5be14f1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0521ea6.css",
+    "static/js/main.5be14f1d.js"
+  ]
+}
