@@ -1,6 +1,10 @@
 import { createReducer, createSlice } from '@reduxjs/toolkit';
 import { filter } from './phoneBook-actions';
-import * as operations from './phoneBook-actions';
+import {
+  getUserContacts,
+  addContact,
+  removeContact,
+} from './phoneBook-actions';
 
 const initialState = {
   items: [],
@@ -12,49 +16,45 @@ const contactsSlice = createSlice({
   name: 'contacts',
   initialState,
   extraReducers: {
-    [operations.getContacts.pending]: state => ({
+    [getUserContacts.pending]: state => ({
       ...state,
       loading: true,
       error: null,
     }),
-    [operations.getContacts.fulfilled]: (state, { payload }) => ({
+    [getUserContacts.fulfilled]: (state, { payload }) => ({
       ...state,
-      loading: false,
       items: payload,
+      loading: false,
     }),
-    [operations.getContacts.rejected]: (state, { payload }) => ({
+    [getUserContacts.rejected]: (state, { payload }) => ({
       ...state,
       loading: false,
       error: payload,
     }),
 
-    [operations.addContact.pending]: state => ({
+    [addContact.pending]: state => ({ ...state, loading: true, error: null }),
+    [addContact.fulfilled]: (state, { payload }) => ({
       ...state,
-      loading: true,
-      error: null,
-    }),
-    [operations.addContact.fulfilled]: (state, { payload }) => ({
-      ...state,
-      loading: false,
       items: [...state.items, payload],
+      loading: false,
     }),
-    [operations.addContact.rejected]: (state, { payload }) => ({
+    [addContact.rejected]: (state, { payload }) => ({
       ...state,
       loading: false,
       error: payload,
     }),
 
-    [operations.removeContact.pending]: state => ({
+    [removeContact.pending]: state => ({
       ...state,
       loading: true,
       error: null,
     }),
-    [operations.removeContact.fulfilled]: (state, { payload }) => ({
+    [removeContact.fulfilled]: (state, { payload }) => ({
       ...state,
+      items: state.items.filter(item => item.id !== payload),
       loading: false,
-      items: state.items.filter(contact => contact.id !== payload),
     }),
-    [operations.removeContact.rejected]: (state, { payload }) => ({
+    [removeContact.rejected]: (state, { payload }) => ({
       ...state,
       loading: false,
       error: payload,
@@ -62,8 +62,9 @@ const contactsSlice = createSlice({
   },
 });
 
-export const phoneBookReducer = createReducer(initialState, {
-  [filter]: (state, action) => ({ ...state,filter: action.payload }),
+
+export const filterReduce = createReducer('', {
+    [filter]: (state, action) => ( action.payload),
 })
 
 export default contactsSlice.reducer;

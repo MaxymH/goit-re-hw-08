@@ -2,4 +2,4 @@ export const getContacts = store =>  store.contacts.items
 
 export const getLoading = store => store.contacts.loading;
 export const getError = store => store.contacts.error;
-export const geFilter = store => store.phoneBookReducer.filter;
+export const geFilter = store => store.filter;

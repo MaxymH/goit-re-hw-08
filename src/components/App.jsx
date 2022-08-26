@@ -1,6 +1,19 @@
-import Phonebook from "./Phonebook";
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
+import Routes from './Route';
+
+import { getCurrentUser } from 'redux/User/user-operation';
 
 export const App = () => {
-  return <Phonebook />;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCurrentUser());
+  }, [dispatch]);
+  return (
+    <div>
+      <Routes />
+    </div>
+  );
 };
-//hhh

@@ -7,7 +7,12 @@ import TitlePhonebook from "./TitlePhonebook";
 import Form from "./Form"
 import ContactList from "./ContactList";
 
-import {getContacts, getError,getLoading, geFilter } from "../../redux/phoneBook/phoneBook-selecctor";
+import { getContacts, getError, getLoading, geFilter } from "../../redux/phoneBook/phoneBook-selecctor";
+import {
+  getUserContacts,
+  addContact,
+  removeContact,
+} from '../../redux/phoneBook/phoneBook-actions';
 
 import * as operations from "../../redux/phoneBook/phoneBook-actions";
 
@@ -22,21 +27,16 @@ const Phonebook = () => {
     
 
     useEffect(() => {
-    dispatch(operations.getContacts());
-    }, [dispatch]);
+    dispatch(getUserContacts());
+  }, [dispatch]);
 
     const addContacts = useCallback(
-      data => {
-        
-        return dispatch(operations.addContact(data));
-    },
+    data => dispatch(addContact(data)),
     [dispatch]
-    );
+  );
 
     const deleteContacts = useCallback(
-    id => {
-      return dispatch(operations.removeContact(id));
-    },
+    id => dispatch(removeContact(id)),
     [dispatch]
   );
 
